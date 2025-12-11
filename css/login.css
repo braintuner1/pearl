@@ -1,0 +1,284 @@
+/* Pearl Edu Fund - Authentication Page Styles */
+
+/* Auth Page Specific Styles */
+#auth-page .login-main {
+    background: linear-gradient(135deg, rgba(214, 125, 62, 0.05) 0%, rgba(52, 58, 64, 0.05) 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.login-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-wrapper {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+}
+
+.login-header {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.login-header h2 {
+    color: #d67d3e;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+.login-header p {
+    color: #666;
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Form Elements */
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.login-input,
+.form-control {
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    height: auto;
+}
+
+.login-input:focus,
+.form-control:focus {
+    border-color: #d67d3e;
+    box-shadow: 0 0 0 0.2rem rgba(214, 125, 62, 0.15);
+    outline: none;
+}
+
+.login-input::placeholder {
+    color: #999;
+}
+
+.form-check {
+    margin-bottom: 0;
+}
+
+.form-check-label {
+    margin-bottom: 0;
+    color: #555;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+/* Consistent Field Spacing */
+.form-field-group {
+    margin-bottom: 1.2rem;
+}
+
+.form-field-group:last-of-type:not(.toggle-auth) {
+    margin-bottom: 1.5rem;
+}
+
+/* Button Styles */
+.btn-login {
+    background-color: #d67d3e;
+    color: white;
+    border: none;
+    padding: 0.875rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn-login:hover {
+    background-color: #c66b2f;
+    transform: translateY(-2px);
+}
+
+.btn-login:active {
+    transform: translateY(0);
+}
+
+/* Authentication Container */
+.auth-container {
+    position: relative;
+    min-height: auto;
+}
+
+.auth-form-wrapper {
+    position: relative;
+    width: 100%;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    visibility: visible;
+}
+
+.auth-form-wrapper.hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+}
+
+/* Toggle Section */
+.toggle-auth {
+    text-align: center;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e0e0e0;
+}
+
+.toggle-auth p {
+    margin-bottom: 0.75rem;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.toggle-btn {
+    background-color: #f5f5f5;
+    border: 2px solid #e0e0e0;
+    padding: 0.6rem 1.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #d67d3e;
+    transition: all 0.3s ease;
+}
+
+.toggle-btn:hover {
+    background-color: #e8e8e8;
+    border-color: #d67d3e;
+    transform: scale(1.05);
+}
+
+/* Alert Styles */
+.alert {
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+/* File Input Styles */
+.input-group {
+    margin-bottom: 0;
+}
+
+.form-text {
+    display: block;
+    margin-top: 0.4rem;
+    color: #888;
+    font-size: 0.85rem;
+}
+
+/* Login Footer */
+.login-footer {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.login-footer p {
+    color: #999;
+    font-size: 0.85rem;
+}
+
+.login-footer a {
+    color: #d67d3e;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login-wrapper {
+        padding: 30px 20px;
+        max-width: 100%;
+        margin: 0 15px;
+    }
+
+    .login-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .login-header p {
+        font-size: 0.9rem;
+    }
+
+    .form-label {
+        font-size: 0.9rem;
+    }
+
+    .login-input,
+    .form-control {
+        font-size: 0.9rem;
+        padding: 0.65rem 0.8rem;
+    }
+
+    .btn-login {
+        padding: 0.75rem 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    #auth-page .login-main {
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-wrapper {
+        padding: 20px 15px;
+        margin: 0 10px;
+    }
+
+    .login-header h2 {
+        font-size: 1.3rem;
+    }
+
+    .form-field-group {
+        margin-bottom: 1rem;
+    }
+
+    .toggle-auth {
+        margin-top: 1rem;
+        padding-top: 1rem;
+    }
+}

@@ -1,0 +1,558 @@
+/* Pearl Edu Fund - Dashboard Styles */
+
+/* Dashboard Container */
+.dashboard-main {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Dashboard Header Section */
+.dashboard-header {
+    background: linear-gradient(135deg, rgba(214, 125, 62, 0.1) 0%, rgba(52, 58, 64, 0.05) 100%);
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.donor-info-section {
+    padding: 20px 0;
+}
+
+.donor-info-section h1 {
+    color: #d67d3e;
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.donor-info-section p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.donor-info-section i {
+    color: #d67d3e;
+    font-size: 1.1rem;
+}
+
+/* Profile Picture Container */
+.profile-picture-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.profile-picture {
+    width: 280px;
+    height: 280px;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    border: 5px solid white;
+    background-color: #f0f0f0;
+}
+
+.profile-picture-placeholder {
+    width: 280px;
+    height: 280px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #d67d3e 0%, #c66b2f 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    color: white;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    border: 5px solid white;
+}
+
+/* Organization Info */
+.organization-info {
+    background: white;
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    max-width: 100%;
+    width: 100%;
+}
+
+.organization-label {
+    color: #999;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.organization-name {
+    color: #d67d3e;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+/* Dashboard Stats */
+.dashboard-stats {
+    background: white;
+    padding: 40px 0;
+}
+
+.stat-card {
+    background: white;
+    border: 2px solid #e8e8e8;
+    border-radius: 12px;
+    padding: 25px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.stat-card:hover {
+    border-color: #d67d3e;
+    box-shadow: 0 10px 30px rgba(214, 125, 62, 0.1);
+    transform: translateY(-5px);
+}
+
+.stat-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #d67d3e 0%, #c66b2f 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: white;
+    flex-shrink: 0;
+}
+
+.stat-icon.icon-points {
+    background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+}
+
+.stat-icon.icon-donation {
+    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+}
+
+.stat-icon.icon-count {
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+}
+
+.stat-content h5 {
+    color: #999;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.stat-content .stat-value {
+    color: #333;
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin: 0 0 0.5rem 0;
+}
+
+.stat-content .stat-label {
+    color: #999;
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+/* Projects Section */
+.projects-section {
+    background: white;
+    padding: 50px 0;
+}
+
+.section-title {
+    color: #333;
+    font-weight: 700;
+    font-size: 2rem;
+    border-left: 5px solid #d67d3e;
+    padding-left: 15px;
+}
+
+.project-card {
+    background: white;
+    border: 2px solid #e8e8e8;
+    border-radius: 12px;
+    padding: 25px;
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    border-color: #d67d3e;
+    box-shadow: 0 10px 40px rgba(214, 125, 62, 0.15);
+    transform: translateY(-5px);
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+
+.project-header h5 {
+    color: #333;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.project-category {
+    background: #d67d3e;
+    color: white;
+    padding: 0.35rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.project-description {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.project-progress {
+    height: 8px;
+    background: #e8e8e8;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.project-progress .progress-bar {
+    background: linear-gradient(90deg, #d67d3e 0%, #c66b2f 100%);
+    transition: width 0.3s ease;
+}
+
+.project-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding: 15px 0;
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.stat-item .stat-label {
+    color: #999;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.3rem;
+}
+
+.stat-item .stat-amount {
+    color: #333;
+    font-weight: 700;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+/* Donation Button */
+.btn-donate {
+    background: linear-gradient(135deg, #d67d3e 0%, #c66b2f 100%);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: auto;
+}
+
+.btn-donate:hover {
+    background: linear-gradient(135deg, #c66b2f 0%, #b55a1f 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(214, 125, 62, 0.3);
+    color: white;
+}
+
+/* Recent Donations Section */
+.recent-section {
+    background: #f8f9fa;
+    padding: 50px 0;
+}
+
+.donation-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.donation-item {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border-left: 5px solid #d67d3e;
+}
+
+.donation-item:hover {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transform: translateX(5px);
+}
+
+.donation-icon {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: white;
+    flex-shrink: 0;
+}
+
+.donation-details {
+    flex-grow: 1;
+}
+
+.donation-details h6 {
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+
+.donation-date {
+    color: #999;
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+.donation-amount {
+    text-align: right;
+}
+
+.donation-amount h6 {
+    color: #d67d3e;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+
+.points-earned {
+    color: #f39c12;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* No Donations Message */
+.no-donations {
+    color: #999;
+    font-size: 1rem;
+    padding: 40px 20px;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+}
+
+/* Modal Styles */
+.modal-content {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+    background: linear-gradient(135deg, #d67d3e 0%, #c66b2f 100%);
+    color: white;
+    border: none;
+    border-radius: 12px 12px 0 0;
+}
+
+.modal-header .modal-title {
+    font-weight: 700;
+}
+
+.modal-header .btn-close {
+    filter: brightness(0) invert(1);
+}
+
+.modal-body {
+    padding: 30px;
+}
+
+.modal-footer {
+    border-top: 1px solid #e8e8e8;
+    padding: 20px 30px;
+}
+
+.btn-secondary {
+    background: #e8e8e8;
+    color: #333;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background: #d0d0d0;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .profile-picture {
+        width: 220px;
+        height: 220px;
+    }
+
+    .profile-picture-placeholder {
+        width: 220px;
+        height: 220px;
+        font-size: 70px;
+    }
+
+    .dashboard-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .stat-card {
+        padding: 20px;
+    }
+
+    .stat-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-picture {
+        width: 180px;
+        height: 180px;
+    }
+
+    .profile-picture-placeholder {
+        width: 180px;
+        height: 180px;
+        font-size: 50px;
+    }
+
+    .dashboard-header {
+        padding: 30px 0;
+    }
+
+    .donor-info-section h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .donor-info-section p {
+        font-size: 0.9rem;
+    }
+
+    .organization-info {
+        padding: 1rem 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .organization-name {
+        font-size: 1.2rem;
+    }
+
+    .stat-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .donation-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .donation-details,
+    .donation-amount {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-picture {
+        width: 150px;
+        height: 150px;
+    }
+
+    .profile-picture-placeholder {
+        width: 150px;
+        height: 150px;
+        font-size: 40px;
+    }
+
+    .dashboard-header {
+        padding: 20px 0;
+    }
+
+    .donor-info-section h1 {
+        font-size: 1.3rem;
+    }
+
+    .dashboard-stats {
+        padding: 20px 0;
+    }
+
+    .stat-card {
+        padding: 15px;
+    }
+
+    .stat-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .section-title {
+        font-size: 1.2rem;
+        padding-left: 10px;
+    }
+
+    .project-card {
+        padding: 15px;
+    }
+
+    .project-header h5 {
+        font-size: 0.95rem;
+    }
+
+    .project-category {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.65rem;
+    }
+}
